@@ -47,5 +47,9 @@ touch $DOCUMENT_ROOT/.github/workflows/{build-and-deploy.yml,test.yml}
 # Root files
 touch $DOCUMENT_ROOT/{.env,package.json,pnpm-workspace.yaml,turbo.json}
 
+# Configure Git user
+git config --global user.name "dFi0racle"
+git config --global user.email "PCW@MANNLIFAMILYOFFICE.ORG"
+
 # Completion message
 echo "Project structure created successfully at $DOCUMENT_ROOT."

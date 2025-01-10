@@ -1,0 +1,20 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": [
+        "apps/mockups/dist/**",
+        "apps/user_dashboard/dist/**"
+      ]
+    },
+    "test": {
+      "outputs": []
+    },
+    "mockups#build": {
+      "outputs": ["apps/mockups/dist/**"]
+    },
+    "user_dashboard#build": {
+      "outputs": ["apps/user_dashboard/dist/**"]
+    }
+  }
+}

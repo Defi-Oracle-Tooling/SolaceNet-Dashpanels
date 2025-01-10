@@ -1,0 +1,21 @@
+# Technology Stack
+
+## Frontend
+- **React.js**: For building interactive UI components.
+- **TailwindCSS**: For styling.
+- **Vite.js**: For fast bundling and development.
+
+## Backend
+- **Node.js**: Backend scripting and server setup.
+- **Express.js**: Mock API server.
+
+## Utilities
+- **Turborepo**: Monorepo management.
+- **pnpm**: Dependency management.
+
+## CI/CD
+- **GitHub Actions**: For automated testing and deployment.
+
+## Hosting
+- **Azure Static Web Apps**: For hosting.
+- **Vercel**: For hosting.

@@ -1,0 +1,98 @@
+SolaceNet Dashpanels - File Tree
+
+SolaceNet-Dashpanels/
+├── apps/                                 # Main applications
+│   ├── user_dashboard/                   # User Dash Panel app
+│   │   ├── dist/                         # Build output directory
+│   │   ├── src/
+│   │   │   ├── components/               # React components specific to User Dash Panel
+│   │   │   │   ├── Header.jsx            # Header component for the User Dashboard
+│   │   │   │   ├── Footer.jsx            # Footer component for the User Dashboard
+│   │   │   ├── views/                    # Page views (e.g., Wallets, Transactions)
+│   │   │   │   ├── Wallets.jsx           # Displays wallet information
+│   │   │   │   ├── Transactions.jsx      # Displays transaction history
+│   │   │   ├── App.jsx                   # Main React App entry point
+│   │   │   ├── README.md                 # Documentation for setup and purpose
+│   │   │   └── index.js                  # App initialization
+│   │   ├── public/                       # Static files
+│   │   │   └── index.html                # Main HTML file
+│   │   ├── package.json                  # App-specific dependencies and scripts
+│   │   └── vite.config.js                # Vite configuration for the app
+│   ├── employee_panel/                   # Employee Panel app
+│   │   ├── src/
+│   │   │   ├── components/               # React components specific to Employee Panel
+│   │   │   ├── views/                    # Page views (e.g., Customer Management, Monitoring)
+│   │   │   ├── App.jsx                   # Main React App entry point
+│   │   │   └── index.js                  # App initialization
+│   │   ├── public/                       # Static files
+│   │   │   └── index.html                # Main HTML file
+│   │   ├── package.json                  # App-specific dependencies and scripts
+│   │   └── vite.config.js                # Vite configuration for the app
+│   ├── admin_panel/                      # Admin Panel app
+│   │   ├── src/
+│   │   │   ├── components/               # React components specific to Admin Panel
+│   │   │   ├── views/                    # Page views (e.g., Analytics, Audit Logs)
+│   │   │   ├── App.jsx                   # Main React App entry point
+│   │   │   └── index.js                  # App initialization
+│   │   ├── public/                       # Static files
+│   │   │   └── index.html                # Main HTML file
+│   │   ├── package.json                  # App-specific dependencies and scripts
+│   │   └── vite.config.js                # Vite configuration for the app
+│   ├── mockups/                          # Mockup directory for client testing
+│   │   ├── dist/                         # Build output directory
+│   │   ├── user_dash_panel/              # User Dashboard mockup
+│   │   ├── employee_panel/               # Employee Dashboard mockup
+│   │   ├── admin_panel/                  # Admin Dashboard mockup
+│   │   ├── assets/                       # Shared styles and scripts
+│   │   │   ├── styles.css                # Common styles for mockups
+│   │   │   ├── scripts.js                # Common scripts for mockups
+│   │   ├── package.json                  # Mockups dependencies and scripts
+│   │   └── vite.config.js                # Vite configuration for the mockups
+├── packages/                             # Shared libraries and resources
+│   ├── components/                       # Reusable React components
+│   │   ├── Button.jsx                    # Button component
+│   │   ├── Modal.jsx                     # Modal component
+│   │   ├── Navbar.jsx                    # Navbar component
+│   │   └── Table.jsx                     # Table component
+│   ├── services/                         # API integrations
+│   │   ├── alchemy.js                    # Alchemy API integration
+│   │   ├── tatum.js                      # Tatum API integration
+│   │   └── thirdweb.js                   # Thirdweb API integration
+│   ├── themes/                           # Core themes
+│   │   ├── default_theme/                # Default theme
+│   │   │   ├── variables.scss            # SCSS variables for the default theme
+│   │   │   └── styles.scss               # Styles for the default theme
+│   │   ├── client_1_theme/               # Client-specific theme
+│   │   ├── client_2_theme/               # Client-specific theme
+│   │   └── package.json                  # Theme dependencies
+│   ├── mock_data/                        # Mock data for testing
+│   │   ├── wallets.json                  # Mock wallet data
+│   │   ├── transactions.json             # Mock transaction data
+│   │   └── customers.json                # Mock customer data
+│   └── utils/                            # Shared utility functions
+│       ├── errorHandler.js               # Error handling utility
+│       ├── formatData.js                 # Data formatting utility
+│       └── validation.js                 # Validation utility
+├── templates/                            # White-label templates
+│   ├── default_theme/                    # Default template theme
+│   ├── client_1_theme/                   # Client-specific theme
+│   ├── client_2_theme/                   # Client-specific theme
+│   ├── README.md                         # Guide on customizing themes
+├── scripts/                              # Automation scripts
+│   ├── build.js                          # Build script for mono-repo
+│   │                                     # This script handles the building process of the mono-repo
+│   │                                     # Ensures all necessary dependencies are bundled correctly
+│   ├── deploy.js                         # Deployment script
+│   │                                     # Deploys the built applications to the target environment
+│   │                                     # Supports multiple deployment destinations
+│   ├── startMockServer.js                # Starts the mock API server
+│   │                                     # Simulates API endpoints for development and testing
+│   │                                     # Provides mock data for wallet and transaction operations
+├── .github/                              # GitHub Actions for CI/CD
+│   └── workflows/
+│       ├── build-and-deploy.yml          # Workflow for building and deploying
+│       └── test.yml                      # Workflow for testing
+├── .env                                  # Environment variables
+├── package.json                          # Root package file for mono-repo
+├── pnpm-workspace.yaml                   # Defines mono-repo structure
+└── turbo.json                            # Turborepo configuration

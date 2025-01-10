@@ -1,0 +1,4 @@
+[
+  { "id": 1, "date": "2025-01-09", "amount": "$500", "status": "Completed" },
+  { "id": 2, "date": "2025-01-08", "amount": "0.1 ETH", "status": "Pending" }
+]

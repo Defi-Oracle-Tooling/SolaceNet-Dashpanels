@@ -1,0 +1,23 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+button {
+  background-color: $secondary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: white;
+  border: 1px solid $primary-color;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

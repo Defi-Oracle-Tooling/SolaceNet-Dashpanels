@@ -1,0 +1,20 @@
+# Recommendations
+
+## General Improvements
+- Use inline comments in script files to enhance maintainability.
+- Include a README in each app folder to document its setup and purpose.
+
+## Theming
+- Dynamically load themes via environment variables.
+- Provide a default theme and client-specific themes in the templates directory.
+
+## Mockups
+- Use mock APIs to simulate realistic interactions for testing.
+- Deploy mockups to GitHub Pages or Netlify for client preview.
+
+## Automation
+- Use GitHub Actions for CI/CD workflows to automate testing and deployments.
+
+## Mock Data
+- Ensure mock data is comprehensive and covers all use cases.
+- Regularly update mock data to reflect real-world scenarios.
